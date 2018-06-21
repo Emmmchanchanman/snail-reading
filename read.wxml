@@ -1,0 +1,24 @@
+<!--pages/read/read.wxml-->
+<view class='list' wx:for="{{readData}}" bindtap='onListTap' data-artid='{{index}}'>
+  <view class='user'>
+    <image src=' {{item.aPhoto}}'></image>
+    {{item.author}}
+  </view>
+  <image  class='big_pic' src=' {{item.bigImg}}'></image>
+  <view class='tit'>
+      <text>热门</text>
+      {{item.tit}}
+  </view>
+  <view class='intro'>
+     {{item.intro}}
+  </view>
+  <view class='count'>
+  <view>
+     {{item.clickNum}} 点击
+  </view>
+  <view>
+   {{item.great}}
+    <text class='iconfont icon-dianzan'></text>
+  </view>
+  </view>
+</view>
