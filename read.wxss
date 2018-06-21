@@ -1,0 +1,51 @@
+/* pages/read/read.wxss */
+@import "/lib/style/iconfont.wxss";
+page{
+  background: #f6f6f6;
+}
+.list{
+  padding: 30rpx;
+  background: #fff;
+  margin-top: 10rpx;
+}
+.list .user{
+  display: flex;
+  font-size: 28rpx;
+  align-items: center;
+}
+.list .user image{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+}
+.list>image{
+  margin-top: 34rpx;
+  width: 690rpx;
+  height: 300rpx;
+}
+.list .tit{
+  font-size: 40rpx;
+  font-weight: bold;
+  margin-top: 30rpx;
+}
+.list .tit text{
+  color: #fff;
+  background: #bc7878;
+  font-size: 24rpx;
+  padding: 5rpx 10rpx;
+  border-radius: 25rpx;
+}
+.list .intro{
+  font-size: 28rpx;
+  line-height: 44rpx;
+  color: #7f7f7e;
+  margin-top: 25rpx;
+}
+.list .count{
+  color: #c0c0c0;
+  font-size: 26rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10rpx;
+}
