@@ -1,0 +1,59 @@
+/* pages/read/read-detail/read-detail.wxss */
+@import "/lib/style/iconfont.wxss";
+.cont{
+  padding: 30rpx;
+}
+.tit{
+  font-size: 40rpx;
+  line-height: 64rpx;
+  font-weight: bold;
+}
+.author-cont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40rpx 0;
+  /* border: 1px solid red; */
+}
+.author-cont image{
+  width: 70rpx;
+  height: 70rpx;
+  border: 1px solid #e5e5e5;
+  border-radius: 50%;
+  margin-right: 25rpx;
+}
+.author{
+  display: flex;
+  align-items: center;
+}
+.author-cont .btn{
+  width: 108rpx;
+  height: 58rpx;
+  border: 1px solid #d8d8d8;
+  text-align: center;
+  line-height: 58rpx;
+  border-radius: 30rpx;
+  /* align-self: center; */
+}
+.words{
+  font-size: 30rpx;
+  line-height: 50rpx;
+  word-break: break-all;
+  text-indent: 2em;
+  /* text-align: justify; */
+}
+.fix-item{
+  width: 100%;
+  border-top: 1px solid #d8d8d8;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;   
+}
+.fix-item .iconfont{
+  font-size: 40rpx;
+  font-weight: bold;
+}
