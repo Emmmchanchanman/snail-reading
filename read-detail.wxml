@@ -1,0 +1,23 @@
+<!--pages/read/read-detail/read-detail.wxml-->
+<view class='cont'>
+  <view class='tit'>
+  {{detailData.tit}}
+</view>
+
+<view class='author-cont'>
+  <view class='author'>
+    <image src='{{detailData.aPhoto}}'></image>
+    {{detailData.author}}
+  </view>
+  <view class='btn'>关注</view>
+</view>
+<view class='words'>
+{{detailData.words}}
+</view>
+</view>
+
+<view class='fix-item'>
+  <view class='iconfont icon-fenxiang'></view>
+  <view class='iconfont icon-xin2'></view>
+  <view class='iconfont icon-liuyanjianyi1'></view>
+</view>
