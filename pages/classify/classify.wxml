@@ -1,0 +1,38 @@
+<!--pages/classify/classify.wxml-->
+<!-- <view wx:for="{{classifyData}}">
+  <text>{{item.id}}</text>
+  <text>{{item.name}}</text>
+</view>
+<text>ddddd</text> -->
+<view class='top'>
+  <view class='item'>
+    <image src='/image/img/book6.jpg'></image>
+    <view>
+      <text>在读榜</text>
+      <text>Top List</text>
+    </view>
+  </view>
+
+  <view class='item'>
+    <image src='/image/img/book7.jpg'></image>
+    <view>
+      <text>新书榜</text>
+      <text>New Release</text>
+    </view>
+  </view>
+</view>
+
+<view class='line'>
+  <text>分类</text>
+</view>
+
+<view class='top classify'>
+  <view class='item' wx:for="{{classifyData}}" bindtap='onClassifyTap' data-bookid="{{item.books}}">
+    <image src='{{item.bigImg}}' mode='aspectFill'></image>
+    <view>
+      <text>{{item.tit}}</text>
+ 
+    </view>
+  </view>
+ 
+</view>
