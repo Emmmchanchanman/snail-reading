@@ -1,0 +1,19 @@
+<!--pages/classify/classify-books/classify-books.wxml-->
+<view class='intro'>
+  <image src='/image/text_bg.png'></image>
+  <text>
+ 我翻开历史一查，这历史没有年代。歪歪斜斜的每页上都写着“仁义道德”几个字，我横竖睡不着，仔细看了半夜，才从字缝里看出来，满本上都写着两个字“吃人"！
+  </text>
+</view>
+
+<view class='author'>
+  <image src='/image/app_icon.png'></image>
+  <text>鲁迅</text>
+</view>
+
+<view class='books' >
+  <view class='item' wx:for="{{booksData}}" data-id="{{item.objectId}}" bindtap='onBookTap'>
+    <image src='{{item.bImg}}'></image>
+    <text>{{item.bookname}}</text>
+  </view>
+</view>
