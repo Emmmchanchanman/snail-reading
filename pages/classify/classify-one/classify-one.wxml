@@ -1,0 +1,32 @@
+<!--pages/classify/classify-one/classify-one.wxml-->
+<text>{{bookId}}</text>
+<view class='top'>
+<!-- {{bookData.isCollected?'icon-aixin':'icon-02'}} -->
+  <text class="iconfont {{bookData.isCollected?'icon-aixin':'icon-02'}}"  bindtap='onCollectTap' data-coid="{{bookData.objectId}}" data-cadd="{{bookData.isCollected}}"></text>
+  <image src='{{bookData.bImg}}'></image>
+  <view class='tit'>{{bookData.bookname}}</view>
+  <view class='author'>{{bookData.author}}</view>
+  <view class='num'>123人在读 ></view>
+</view>
+
+<view class='tab'>
+  <text class="{{isActive?'active':''}}" bindtap='onTabTap' data-bool="true">详情</text>
+  <text class="{{isActive?'':'active'}}" bindtap='onTabTap' data-bool="false">目录</text>
+</view>
+
+<view class='cont' wx:if="{{isActive}}">
+ {{bookData.detail}}
+</view>
+
+<view class='list' wx:if="{{!isActive}}" >
+  <view wx:for="{{cataData}}">{{item}}</view>
+</view>
+
+<view class='fix-view'>
+  <view class="{{bookData.isAdd?'gray':''}}"  bindtap='onAddTap' data-id="{{bookData.objectId}}"
+   data-add="{{bookData.isAdd}}">
+    <text wx:if="{{!bookData.isAdd}}">加入书桌</text>
+    <text wx:if="{{bookData.isAdd}}">移出书桌</text>
+  </view>
+  <view>阅读</view>
+</view>
