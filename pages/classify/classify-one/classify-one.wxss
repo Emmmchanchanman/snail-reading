@@ -1,0 +1,88 @@
+/* pages/classify/classify-one/classify-one.wxss */
+@import '/lib/style/iconfont.wxss';
+
+page{
+  padding-bottom: 120rpx;
+}
+.top{
+  text-align: center;
+  padding: 60rpx 0;
+  position: relative;
+}
+.top image{
+  width: 220rpx;
+  height: 300rpx;
+  box-shadow: 0 0 20rpx 1rpx rgba(0,0,0,0.1);
+}
+.top .tit{
+  font-size: 32rpx;
+  margin-top: 70rpx;
+}
+.top .author{
+  font-size: 24rpx;
+  color: #149bb3;
+  margin-top: 40rpx;
+}
+.top .num{
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 40rpx;
+}
+.tab{
+  line-height: 86rpx;
+  border-bottom: 1px solid #d8d8d8;
+  display: flex;
+  justify-content: space-around;
+  font-size: 30rpx;
+}
+.tab text{
+  padding: 0 10rpx;
+}
+.tab text.active{
+  border-bottom: 4rpx solid #444;
+}
+.cont{
+  line-height: 50rpx;
+  padding: 30rpx;
+  font-size: 28rpx;
+}
+.list{
+  padding-left: 50rpx;
+}
+.list>view{
+  line-height: 100rpx;
+  border-bottom: 1px solid #d8d8d8;
+}
+.list>view:last-child{
+  border: none;
+}
+.fix-view{
+  line-height: 100rpx;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #d8d8d8;
+  display: flex;
+  background: #fff;
+  text-align: center
+}
+.fix-view view{
+  width: 50%;
+}
+.fix-view view:last-child{
+  background: #b89477;
+  color: #fff;
+  width: 50%;
+  text-align: center;
+}
+.fix-view view.gray{
+  color: #d8d8d8;
+}
+.iconfont{
+    font-size: 25px;
+    position: absolute;
+    top: 30rpx;
+    right: 30rpx;
+    color: #ec3d0d;
+}
