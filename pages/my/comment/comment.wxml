@@ -1,0 +1,33 @@
+<!--pages/my/comment/comment.wxml-->
+<view wx:for="{{bookData}}" wx:key=''>
+    <view class='scene'>
+        <view class='head'>
+            <view>这本书内容如何？</view>
+            <view>给它来一次中肯的评价吧</view>
+        </view>
+        <view class='bookinfo'>
+            <view><image class='img' src='{{item.bImg}}'></image></view>
+            <view class='bookname'>{{item.bookname}}</view>
+            <view class='author'>{{item.author}}</view>
+            <view class='tit'>
+                <view class='line'></view>
+                <view>本次阅读评价</view>
+                <view class='line'></view>        
+            </view>
+        </view>
+      
+        <view class='xing'>
+            <view wx:for="{{5}}" wx:key='' class="iconfont icon-xingxing {{n>index?'backcolor':''}}" bindtap='like' data-num='{{index}}'></view>
+        </view>
+        <view class='point'>
+            <view wx:for="{{comment}}" wx:key='' bindtap='choose' class="{{m==index?'back':''}}" data-m="{{index}}">{{item.name}}</view>
+        </view>
+    </view>
+    <form bindsubmit="formsubmit">
+        <view class='review'>
+            <textarea placeholder='写点感受吧' name='catalogue' maxlength='500' value='' bindinput='shuru'></textarea>
+            <view class='num'>{{Num}}/500</view>
+        </view>  
+        <button class='iconfont icon-xuanzegouxuanzhuangtaishangpinxiangqing sure' form-type='submit'>提交</button> 
+    </form>
+</view>
