@@ -1,0 +1,128 @@
+/* pages/my/comment/comment.wxss */
+@import "/lib/style/iconfont.wxss";
+
+.head{
+     padding:32rpx 30rpx 30rpx; 
+    display: flex;
+      box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+.head view:first-child{
+    font-size: 30rpx;
+
+    font-weight: bold;
+}
+.head view:last-child{
+    font-size: 28rpx;
+    color: #8d8d8d;
+}
+.bookinfo{
+   padding: 0 30rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20rpx;
+}
+.img{
+    height: 160rpx;
+    width: 120rpx;
+}
+.bookname{
+    line-height: 60rpx;
+    font-size: 37rpx;
+    color: #444;
+    font-weight: bold;
+}
+.author{
+    line-height: 60rpx;
+    font-size: 30rpx;
+    color: #8d8d8d;
+}
+.tit{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 37rpx;
+    font-weight: bold;
+    color: #444;
+}
+.line{
+    width: 80rpx;
+    height: 2rpx;
+    margin: 0 20rpx;
+    background: #d8d8d8;
+}
+.xing{
+   padding: 0 30rpx;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20rpx;
+    justify-content: center;
+}
+.iconfont{
+    font-size: 50rpx;
+    margin: 10rpx 20rpx; 
+}
+.icon-star{
+     color: rgba(0, 0, 0, 0.3);
+}
+.backcolor{
+    color: #ffc600;
+}
+.point{
+   padding: 0 30rpx;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 26rpx;
+    color: #8d8d8d;
+    margin-top: 20rpx;
+    justify-content: space-between;
+}
+.point view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d8d8d8;
+    border-radius: 10rpx;
+    height: 50rpx;
+    width: 156rpx;
+    margin: 5rpx 0; 
+}
+.back{
+    background: yellow;
+}
+.review{
+   padding: 0 30rpx;
+}
+textarea {
+    margin-top: 10rpx;
+    height:130px;
+    font-size: 26rpx;
+    line-height: 40rpx;
+    display:block;
+    position:relative;
+    border: 1px solid #d8d8d8;
+    box-sizing: border-box;
+}
+.num{
+    position: relative;
+    margin-left:616rpx;
+    margin-top: -48rpx;
+    color: #bfbfbf;
+}
+.sure{
+    font-size: 36rpx;
+    height: 80rpx;
+    width: 100%;
+    position:fixed;
+    bottom:-6rpx;
+    left:-17rpx;
+
+    background: #00b2b2;
+    color: #fff;
+}
