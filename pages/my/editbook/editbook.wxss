@@ -1,0 +1,40 @@
+/* pages/my/editbook/editbook.wxss */
+@import '/lib/style/iconfont.wxss';
+page{
+  background: #f5f6f6;
+  box-sizing: border-box;
+}
+.items{
+  padding: 35rpx 30rpx 30rpx 30rpx;
+  background: #fff;
+  margin-bottom: 10rpx;
+  box-sizing: border-box;
+}
+view text{
+  font-size: 28rpx;
+  font-weight: bold;
+}
+input,textarea{
+  margin-top: 38rpx;
+  border: 1px solid #d8d8d8;
+  height: 100rpx;
+  
+}
+textarea{
+  padding: 15rpx 20rpx;
+  box-sizing: border-box;
+}
+view .detail{
+  width: 690rpx;
+  height: 280rpx;
+  flex-wrap: wrap;
+}
+view .cata{
+  width: 690rpx;
+  height: 200rpx;
+  flex-wrap: wrap;
+}
+.btn{
+  background: #00b2b2;
+  color: #fff;
+}
