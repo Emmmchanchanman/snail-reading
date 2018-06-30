@@ -1,0 +1,33 @@
+<!--pages/my/editbook/editbook.wxml-->
+<form bindsubmit='onEditSubmit'>
+  <view data-bid='{{bookData.objectId}}'>
+    <view class='items'>
+      <text>图书分类</text>
+      <input type='text' name="classify" value='{{bookData.classify}}'></input>
+    </view>
+    <view class='items'>
+      <text>图书名称</text>
+      <input type='text' name="bookname" value='{{bookData.bookname}}'></input>
+    </view>
+    <view class='items'>
+      <text>作者</text>
+      <input type='text' name="author" value='{{bookData.author}}'></input>
+    </view>
+    <view class='items'>
+      <text>书籍海报</text>
+      <input type='text' name="bImg" value='{{bookData.bImg}}'></input>
+    </view>
+    <view class='items'>
+      <text>图书简介</text>
+      <textarea type='text' bindinput='shuru' class="detail" clos="40" rows="10" name="detail" value='{{bookData.detail}}' placeholder='请输入图书简介，最多500字'></textarea>
+       <!-- <view class='num'>{{Num}}/500</view> -->
+    </view>
+    <view class='items'>
+      <text>书籍目录</text>
+      <textarea type='text' clos="40" rows="5" class='cata' name="catalogue" value='{{bookData.catalogue}}' placeholder='请输入图书目录，最多200字'></textarea>
+    </view>
+    <view>
+      <button class='btn iconfont icon-xuanzegouxuanzhuangtaishangpinxiangqing' form-type='submit'>确定更改</button>
+    </view>
+  </view>
+</form>
