@@ -1,0 +1,47 @@
+<!--pages/my/manage/manage.wxml-->
+<view class='tab'>
+  <text class="{{isActive?'active':''}}" bindtap='onTabTap' data-bool="true">所有图书</text>
+  <text class="{{isActive?'':'active'}}" bindtap='onTabTap' data-bool="false">我的收藏</text>
+</view>
+
+<view class='cont' wx:if="{{isActive}}">
+  <view class='items' wx:for="{{booksData}}"  >
+    <view class='intro'>
+      <view class='title'>
+        <text bindtap='onCheckTap' data-checkid='{{item.objectId}}' class="iconfont {{item.whetherCheck?'icon-duoxuankuang1':'icon-duoxuankuang'}}"></text>
+        <text class='tit'>{{item.bookname}}</text>
+      </view>
+      <view class='right'>
+        <view  class='author'>
+          <view><text class='green'>作者：</text>{{item.author}}</view>
+          <view><text class='green'>发布时间</text>：{{item.createdAt}}</view>
+        </view>
+        <text class="iconfont {{item.isShow?'icon-07jiantouxiangxia':'icon-07jiantouxiangyou'}}" data-iconid='{{item.objectId}}'bindtap='onShowTap'></text>
+      </view>
+    </view>
+    <view class='detail showed' wx:if="{{item.isShow}}">
+      {{item.detail}}
+      <view class='oper'>
+  
+        <view class='review' data-bookid='{{item.objectId}}' bindtap='comment'>书评</view>      
+        <view class='del' data-id='{{item.objectId}}' bindtap='onDelTap'>删除</view>
+        <view class='edit' data-editid='{{item.objectId}}' bindtap='onEditTap'>编辑</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='collect' wx:if="{{!isActive}}">
+   <view class='books' >
+    <view class='item' wx:for="{{colData}}" wx:key="index">
+      <image src='{{item.bImg}}'></image>
+      <text>{{item.bookname}}</text>
+      <text class="iconfont {{item.isCheck?'icon-yixuan':'icon-xuanzegouxuanzhuangtaishangpinxiangqing'}}" bindtap='onCheckIconTap' data-num="{{index}}" data-coid="{{item.objectId}}" data-cadd="{{item.isCollected}}"></text>
+    </view> 
+  </view>
+  <view class='del'>
+    <text bindtap='onDelIconTap'>删除</text>
+  </view>
+</view>
+
+
+
