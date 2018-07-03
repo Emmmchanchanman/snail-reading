@@ -1,0 +1,188 @@
+/* pages/my/manage/manage.wxss */
+@import '/lib/style/iconfont.wxss';
+.tab{
+  line-height: 86rpx;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-around;
+  font-size: 30rpx;
+}
+.tab text{
+  width: 49.5%;
+  text-align: center;
+  font-size: 32rpx;
+}
+.tab text:first-child{
+  border-right: 1px solid #e5e5e5;  
+}
+.tab .active{
+  border-bottom: 2rpx solid #f48809;
+}
+.cont{
+  padding: 30rpx;
+}
+.cont .items{
+  padding: 25rpx 20rpx 0rpx;
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 15rpx;
+  margin-bottom: 10rpx;
+}
+.cont .items .intro{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cont .items .intro .title{
+  display: flex;
+  align-items: center;
+}
+.cont .items .intro .title .tit{
+  font-size: 26rpx;
+}
+.cont .item .intro .icon-duoxuankuang{
+  font-size: 28rpx;  
+}
+.cont .items .intro .right{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cont .items .intro .author{
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  text-align: right;
+  padding-right: 15rpx;
+}
+.cont .items .intro .author view{
+  margin-bottom: 15rpx;
+  color: #999;
+  font-size: 24rpx;
+}
+.cont .items .intro .author view .green{
+  color: #4db6ac;
+}
+
+.icon-07jiantouxiangyou{
+  font-size: 50rpx;
+  color: #8f8f8f;
+}
+.icon-07jiantouxiangxia{
+  font-size: 50rpx;
+  color: #8f8f8f; 
+}
+.cont .items .detail{
+  border-top: 1px solid #ededed;
+  padding:20rpx 20rpx 15rpx;
+  font-size: 26rpx;
+  line-height: 30rpx;
+  color: #8a8a8a;
+}
+.cont .items .detail .oper{
+  display:flex;
+  justify-content: flex-end;
+  padding-top: 5rpx;  
+}
+.cont .items .detail .del{
+  width:150rpx; 
+  height:70rpx;
+  background: #d32e52;
+  text-align: center;
+  line-height: 70rpx;
+  color: #fff;
+  border-radius: 10rpx;
+  margin-right: 30rpx;
+}
+.cont .items .detail .review{
+  width:150rpx; 
+  height:70rpx;
+  background: #005792;
+  text-align: center;
+  line-height: 70rpx;
+  color: #fff;
+  border-radius: 10rpx;
+  margin-right: 30rpx;
+}
+.cont .items .detail .edit{
+   width:150rpx; 
+  height:70rpx;
+  background: #00b2b2;
+  text-align: center;
+  line-height: 70rpx;
+  color: #fff;
+  border-radius: 10rpx;
+}
+/* .showed{
+  display: none;
+} */
+.isShow{
+  display: block;
+}
+
+.collect{
+  padding: 40rpx;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  line-height: 60rpx;
+  border-bottom: 1px solid #d8d8d8;
+  color: #9b9b9b;
+}
+.collect .books{
+  display: flex;
+  /* justify-content: space-between; */
+  margin-top: 60rpx;
+  flex-wrap: wrap;
+}
+.collect .icon-aixin,.icon-02{
+  font-size: 100rpx;
+  color: #ec3d0d;
+}
+.collect .books .item{
+  height: 340rpx;
+  width: 170rpx;
+  margin-right: 80rpx;
+  margin-bottom: 50rpx;
+  position: relative;
+}
+.collect .books .item:nth-child(3n){
+  margin-right: 0;
+}
+.collect .books .item image{
+  width: 100%;
+  height: 240rpx;
+  box-shadow: 0 0 10rpx 2rpx rgba(0,0,0,2);
+}
+.collect .books .item text{
+  line-height: 40rpx;
+  font-size: 24rpx;
+  padding-top: 10rpx;
+  display: flex;
+}
+.collect .item .iconfont{
+  position: absolute;
+  top: 0;
+  right:10rpx;
+  font-size: 30px;
+  color:#2ffdfd;
+}
+.collect .del{
+  height: 100rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #00b2b2;
+  color: #fff;
+}
+.collect .del text{
+  width: 49.5%;
+
+  color:#fff; 
+}
+
