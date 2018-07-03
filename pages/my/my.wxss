@@ -1,0 +1,98 @@
+/* pages/my/my.wxss */
+@import '/lib/style/iconfont.wxss';
+page{
+  background: #f6f6f6;
+}
+.top{
+  background: #fff;
+  padding: 30rpx;
+  box-sizing: border-box;  
+  margin-bottom: 15rpx;
+}
+.top .edit{
+  font-size: 35rpx;
+  color: #d4bfad;
+  text-align: right;
+}
+.top .head{
+  height: 240rpx;
+  width: 166rpx;
+  margin: 0 auto;
+  text-align: center;
+}
+.top .head image{
+  width: 166rpx;
+  height: 166rpx;
+  border-radius: 50%;
+  margin-bottom: 35rpx;
+}
+.top .head .user{
+
+  font-size: 33rpx;
+  font-weight: bold;
+}
+.top .readingtime{
+  padding:65rpx 0 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.top .readingtime view{
+  width: 340rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.top .readingtime view text:first-child{
+  font-size: 30rpx;
+  padding-bottom: 15rpx;
+  font-weight: bold;
+}
+.top .readingtime view text:last-child{
+  font-size: 25rpx;
+  color: #b3b3b3;
+}
+.top .readingtime .iconfont{
+  padding-top: 30rpx;
+}
+.iconfont{
+    color: #d6d6d6;
+}
+.icon-weibiaoti34{
+  color: #b3b3b3;
+}
+.cont{
+  background: #fff;
+  padding: 30rpx;
+  position: relative;
+  box-sizing: border-box;  
+}
+.cont .items{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100rpx;
+}
+.cont .items view{
+  display: flex;
+  align-items: center;
+}
+.cont .msg{
+  padding-left: 35rpx;
+  font-size: 33rpx;
+  /* font-weight: bold; */
+}
+.cont .icon-weibiaoti34{
+  position: relative;
+  right: 0;
+}
+.cont .review{
+  font-size: 25rpx;
+  padding: 13rpx 20rpx;
+  border: 1px solid #e0e0e0;
+  border-radius: 30rpx;
+}
+.cont .litmsg{
+  font-size: 25rpx;
+  color: #b3b3b3;
+}
