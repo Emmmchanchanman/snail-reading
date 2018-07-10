@@ -1,0 +1,140 @@
+/* pages/desk/desk.wxss */
+@import '/lib/style/iconfont.wxss';
+page{
+  padding: 40rpx;
+  box-sizing: border-box;
+  text-align: center;
+}
+.show-list{
+  text-align: right;
+  color: #b3b3b3;
+}
+.show-list .iconfont{
+  font-size: 50rpx;
+}
+.slide swiper{
+  width: 400rpx;
+  height: 560rpx;
+  margin: 50rpx auto;
+  border-radius: 20rpx;
+  overflow: hidden;
+  box-shadow: 0 0 30rpx 2rpx rgba(0,0,0,0.4);
+}
+.slide swiper-item{
+  overflow: hidden;
+}
+.slide swiper-item image{
+  width: 100%;
+  height: 100%;
+  border-radius: 20rpx;  
+}
+.line-cont{
+  display: flex;
+  justify-content: center;
+}
+.line-cont .line{
+  height: 5rpx;
+  width: 40rpx;
+  background: #ececec;
+  border-radius: 3rpx;
+}
+.line-cont .line.active{
+  background: #444;
+}
+.tit{
+  margin: 70rpx 0;
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.read{
+  font-size: 24rpx;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.read .iconfont{
+  font-size: 40rpx;
+  position: relative;
+  top: 2rpx;
+}
+.cover{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  padding: 0 40rpx;
+  box-sizing: border-box;
+  transform: translateY(100%);
+  transition: all 0.5s;
+  overflow-y: scroll;
+  padding-bottom: 100rpx;
+}
+.cover.show{
+  transform: translateY(0);
+  
+}
+.control{
+  display: flex;
+  justify-content: space-between;
+  line-height: 60rpx;
+  border-bottom: 1px solid #d8d8d8;
+  color: #9b9b9b;
+}
+.books{
+  display: flex;
+  /* justify-content: space-between; */
+  margin-top: 60rpx;
+  flex-wrap: wrap;
+}
+.books .item{
+  height: 340rpx;
+  width: 170rpx;
+  margin-right: 80rpx;
+  margin-bottom: 50rpx;
+  position: relative;
+}
+.books .item:nth-child(3n){
+  margin-right: 0;
+}
+.books .item image{
+  width: 100%;
+  height: 240rpx;
+  box-shadow: 0 0 10rpx 2rpx rgba(0,0,0,2);
+}
+.books .item text{
+  line-height: 40rpx;
+  font-size: 24rpx;
+  padding-top: 10rpx;
+  display: flex;
+}
+.item .iconfont{
+  position: absolute;
+  top: 0;
+  right:10rpx;
+  font-size: 80rpx;
+  color: #2ffdfd;
+}
+.item .icon-xuanzegouxuanzhuangtaishangpinxiangqing{
+  /* color: rgba(0,0,0,0.4); */
+  color: #67cc6e;
+}
+.item .icon-yixuan{
+  color: #67cc6e;
+}
+.del{
+  height: 100rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #ececec;
+}
+.del text:last-child{
+  color:#ff1324; 
+}
