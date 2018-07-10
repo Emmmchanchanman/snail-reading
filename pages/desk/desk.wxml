@@ -1,0 +1,42 @@
+<!--pages/desk/desk.wxml-->
+<view class='show-list'>
+  <text class='iconfont icon-liebiao11' bindtap='onShowTap'></text>
+</view>
+
+<view class='slide'>
+  <swiper bindchange='onChange'>
+    <block wx:for="{{deskData}}" wx:key="index">
+      <swiper-item>
+        <image src='{{item.bImg}}' mode='aspectFill' class="slide-image"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class='line-cont'>
+  <view class="line {{activeIndex==index?'active':''}}" wx:for="{{deskData}}" wx:key="index"></view>
+</view>
+
+<view class='tit'>{{deskData[activeIndex].bookname}}</view>
+<view class='read'>{{deskData[activeIndex].author}}
+  <text class='iconfont icon-weibiaoti34'></text>
+</view>
+
+<view class="cover {{isShow?'show':''}}">
+  <view class='control'>
+    <text bindtap='onHideTap'>关闭</text>
+    <text>编辑</text>
+  </view>
+  <view class='books' >
+    <view class='item' wx:for="{{deskData}}" wx:key="index">
+      <image src='{{item.bImg}}'></image>
+      <text>{{item.bookname}}</text>
+      <text class="iconfont {{item.isCheck?'icon-yixuan':'icon-xuanzegouxuanzhuangtaishangpinxiangqing'}}" bindtap='onCheckTap' data-num="{{index}}" data-id='{{item.objectId}}'></text>
+    </view> 
+  </view>
+  
+</view>
+<view class='del' wx:if="{{isShow}}">
+    <text>置顶</text>
+    <text bindtap='onDelTap'>删除</text>
+</view>
